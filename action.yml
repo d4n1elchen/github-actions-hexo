@@ -5,6 +5,9 @@ branding:
   icon: upload-cloud
   color: green
 inputs:
+  config:
+    description: 'The _config.yml file'
+    required: false
   deploykey:
     description: 'The develop key of your GitHub Page repository'
     required: true
