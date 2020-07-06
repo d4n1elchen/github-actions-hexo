@@ -1,4 +1,4 @@
-name: 'Hexo GitHub Action'
+name: 'Hexo GitHub Action with Custom Config'
 description: 'A GitHub action used to automatic generate and deploy hexo-based blog.'
 author: 'yrpang'
 branding:
