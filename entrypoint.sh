@@ -16,7 +16,8 @@ npm install
 
 # Replace config file if specified
 if ${INPUT_CONFIG}; then
-echo "${INPUT_CONFIG}" > _config.yml
+    echo "${INPUT_CONFIG}" > ./_config.yml
+    cat _config.yml
 fi
 
 # generate&publish
