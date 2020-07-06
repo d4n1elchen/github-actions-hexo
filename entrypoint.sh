@@ -14,6 +14,11 @@ git config --global user.email "${INPUT_EMAIL}"
 npm install -g hexo-cli
 npm install
 
+# Replace config file if specified
+if ${INPUT_CONFIG}; then
+echo "${INPUT_CONFIG}" > _config.yml
+fi
+
 # generate&publish
 hexo g
 hexo d
