@@ -14,7 +14,7 @@ git config --global user.email "${INPUT_EMAIL}"
 npm install -g hexo-cli
 npm install
 
-if ${INPUT_CONFIG}; then
+if [ ! -z "${INPUT_CONFIG}" ]; then
     echo "${INPUT_CONFIG}" > ./_config.yml
     cat _config.yml
 fi
