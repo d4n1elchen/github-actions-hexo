@@ -16,7 +16,6 @@ npm install
 
 if [ ! -z "${INPUT_CONFIG}" ]; then
     echo "${INPUT_CONFIG}" > ./_config.yml
-    cat _config.yml
 fi
 
 # generate&publish
