@@ -6,7 +6,7 @@ mkdir -p /root/.ssh/
 echo "${INPUT_DEPLOYKEY}" >/root/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
 ssh-keyscan -t rsa github.com >>/root/.ssh/known_hosts
-ssh-keyscan -t rsa -p 22222 serverroom.router.ccns.io >>/root/.ssh/known_hosts
+# ssh-keyscan -t rsa -p 22222 serverroom.router.ccns.io >>/root/.ssh/known_hosts
 
 git config --global user.name "${INPUT_USERNAME}"
 git config --global user.email "${INPUT_EMAIL}"
